@@ -1,0 +1,170 @@
+/*saker som involverar hela dokumentet*/
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+/*header*/
+
+header {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1;
+}
+
+.top-header {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to right, blueviolet, violet);
+    color: whitesmoke;
+
+    margin-inline: 0;
+    padding-inline: 15%;
+}
+
+/*header links*/
+
+.primary-navigation {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.link-header {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.link-header:hover {
+    color: black;
+}
+
+/*main*/
+/*section*/
+
+main {
+    position: relative;
+    top: 15%;
+    left: 15%;
+
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+    margin-inline: auto;
+}
+
+section {
+    width: 70%;
+
+    z-index: 0;
+}
+
+h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+    padding: 0.5rem;
+}
+
+.grid-row:nth-child(odd) {
+    background: whitesmoke;
+}
+
+/*aside*/
+
+aside {
+    position: sticky;
+    top: 15%;
+
+    height: 100%;
+
+    background-color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    z-index: 1;
+}
+
+aside:hover {
+    box-shadow: 0rem 0.5rem 2rem rgb(219, 219, 219);
+    scale: 1.04;
+}
+
+/*aside links*/
+/*Link som tar dig till HTML delen eller CSS delen*/
+
+.aside-nav {
+    list-style: upper-roman;
+
+    padding: 1rem;
+}
+
+.aside-nav-link {
+    color: blueviolet;
+}
+
+.aside-nav-link:hover {
+    color: violet;
+}
+
+.aside-nav-link:active {
+    color: black;
+}
+
+/*link till olika delar av HTML länkarna eller CSS länkarna*/
+
+.link-main {
+    color: blueviolet;
+}
+
+.link-main:hover {
+    color: violet;
+}
+
+.link-main:active {
+    color: black;
+}
+
+/*Footer*/
+
+footer {   
+    background: linear-gradient(to right, blueviolet, violet);
+
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+    padding: 2rem;
+    margin-top: 2rem;
+
+    list-style: none;
+
+    z-index: 1;
+}
+
+.link-footer {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    color: black;
+}
